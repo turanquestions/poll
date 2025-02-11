@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/profile.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">☰</button>
+        <h1>Сайт опросов</h1>
+    </header>
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="index.html"><img src="img/home-icon.png" alt="" /> Главная</a></li>
+            <li><a href="profile.html"><img src="img/user-icon.png" alt="" /> Профиль</a></li>
+            <li class="dropdown">
+                <a href="categories.html"><img src="img/category-icon.png" alt="" /> Категории</a>
+                <ul class="dropdown-menu">
+                    <li><a href="category1.html">Аниме</a></li>
+                    <li><a href="category2.html">Игры</a></li>
+                    <li><a href="category3.html">Музыка</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html"><img src="img/login-icon.png" alt="" /> Вход</a></li>
+            <li><a href="register.html"><img src="img/register-icon.png" alt="" /> Регистрация</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>Информация о вашем профиле</h1>
+        <section class="profile-info">
+            <div class="profile-card">
+                <h2>Ваш профиль</h2>
+                <p>Ник: <strong id="user-name">Загрузка...</strong></p>
+                <p>Общее количество очков: <strong id="user-points">0</strong></p>
+            </div>
+            <div class="profile-card">
+                <h2>Статистика</h2>
+                <p>Пройдено опросов: <strong id="user-surveys">0</strong></p>
+                <p>Оставлено отзывов: <strong id="user-reviews">0</strong></p>
+                <p>Рейтинг: <strong id="user-rating">0/5</strong></p>
+            </div>
+        </section>
+        <section class="popular-surveys">
+            <h3>Популярные опросы</h3>
+            <ul>
+                <li><a href="#">Опрос по аниме 2023</a></li>
+                <li><a href="#">Лучшие видеоигры года</a></li>
+                <li><a href="#">Музыкальные вкусы поколения Z</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Сайт опросов. Все права защищены.</p>
+    </footer>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

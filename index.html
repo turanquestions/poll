@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт опросов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/home.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">☰</button>
+        <h1>Сайт опросов</h1>
+    </header>
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+            <li class="dropdown">
+                <a href="categories.html">Категории</a>
+                <ul class="dropdown-menu">
+                    <li><a href="category1.html">Аниме</a></li>
+                    <li><a href="category2.html">Игры</a></li>
+                    <li><a href="category3.html">Музыка</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="left-column">
+            <section class="welcome">
+                <h2>Добро пожаловать!</h2>
+                <p>Присоединяйтесь к нашему сообществу! Участвуйте в опросах, делитесь своим мнением и узнавайте, что думают другие.</p>
+            </section>
+            <section class="categories">
+                <h3>Наши категории</h3>
+                <div class="category-card">
+                    <a href="category1.html">
+                        <img src="img/category1.jpg" alt="Категория 1">
+                        <h4>Аниме</h4>
+                        <p>Обсуждение популярных аниме, персонажей и сюжетов.</p>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="category2.html">
+                        <img src="img/category2.jpg" alt="Категория 2">
+                        <h4>Игры</h4>
+                        <p>Новости игровой индустрии, обзоры и обсуждения.</p>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="category3.html">
+                        <img src="img/category3.jpg" alt="Категория 3">
+                        <h4>Музыка</h4>
+                        <p>Обсуждение любимых исполнителей, альбомов и концертов.</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <aside class="right-column">
+            <section class="popular-surveys">
+                <h3>Популярные опросы</h3>
+                <ul>
+                    <li><a href="survey1.html">Любимый гаджет</a></li>
+                    <li><a href="survey2.html">Как заботитесь об экологии?</a></li>
+                    <li><a href="survey3.html">Лучшие фильмы года</a></li>
+                </ul>
+            </section>
+            <section class="subscribe">
+                <h3>Подписка на новости</h3>
+                <form>
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2024 Сайт опросов. Все права защищены.</p>
+    </footer>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
